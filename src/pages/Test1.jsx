@@ -83,7 +83,7 @@ export default function Test1() {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Angka dg pembatas koma ','"
+                placeholder="Input Angka dg pembatas koma ','"
                 value={input}
                 onChange={(e) => {
                   setInput(e.target.value);
