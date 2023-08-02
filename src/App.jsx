@@ -15,9 +15,9 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/test1" element={<Test1 />} />
-          <Route path="/test2" element={<Test2 />} />
-          <Route path="/test3" element={<Test3 />} />
+          <Route path="/test1/:id" element={<Test1 />} />
+          <Route path="/test2/:id" element={<Test2 />} />
+          <Route path="/test3/:id" element={<Test3 />} />
         </Routes>
       </BrowserRouter>
     </div>

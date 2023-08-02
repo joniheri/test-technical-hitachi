@@ -19,7 +19,7 @@ export default function Home() {
                   className="card h-100 shadow"
                   style={{ cursor: "pointer" }}
                   onClick={() => {
-                    navigate(item.patchUrl);
+                    navigate(item.patchUrl + `/${item.id}`);
                   }}
                 >
                   <div className="card-body">
