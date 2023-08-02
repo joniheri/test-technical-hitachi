@@ -30,6 +30,13 @@ export default function Test3() {
     findAllCombinations();
   }, [input]);
 
+  const detailTest = () => {
+    const idSoal = params.id;
+    const response = dataSoal.find((item) => item.id === idSoal);
+    console.log(response);
+    setSoal(response);
+  };
+
   const findAllCombinations = (currentIndex = 0, currentCombination = "") => {
     if (currentIndex === input.length) {
       setResult((prevResult) => [...prevResult, currentCombination]);
@@ -47,13 +54,6 @@ export default function Test3() {
     for (const letter of letters) {
       findAllCombinations(currentIndex + 1, currentCombination + letter);
     }
-  };
-
-  const detailTest = () => {
-    const idSoal = params.id;
-    const response = dataSoal.find((item) => item.id === idSoal);
-    console.log(response);
-    setSoal(response);
   };
 
   const handleInputChange = (e) => {
@@ -77,7 +77,7 @@ export default function Test3() {
             navigate("/");
           }}
         />
-        <h3 style={{ marginTop: "5px" }}>Test {soal.id}</h3>
+        <h3 style={{ marginTop: "6px" }}>Test {soal.id}</h3>
       </div>
 
       {/* Soal */}

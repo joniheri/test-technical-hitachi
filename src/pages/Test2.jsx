@@ -37,7 +37,7 @@ export default function Test2() {
             navigate("/");
           }}
         />
-        <h3 style={{ marginTop: "5px" }}>Test {soal.id}</h3>
+        <h3 style={{ marginTop: "6px" }}>Test {soal.id}</h3>
       </div>
 
       {/* Soal */}
