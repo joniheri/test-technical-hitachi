@@ -78,7 +78,7 @@ export default function Test1() {
       <div className="mt-5">
         <h5>Demo Hasil</h5>
         <div className="row">
-          <div className="col-lg-3 mb-3">
+          <div className="col-lg-4 mb-3">
             <div class="input-group">
               <input
                 type="text"

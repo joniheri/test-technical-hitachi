@@ -33,7 +33,7 @@ export default function Home() {
                       className="text-success"
                       style={{ fontStyle: "italic" }}
                     >
-                      Klik disini
+                      Hasil Klik disini
                     </span>
                   </div>
                 </div>

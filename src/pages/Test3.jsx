@@ -101,7 +101,7 @@ export default function Test3() {
       <div className="mt-5">
         <h5>Demo Hasil</h5>
         <div className="row">
-          <div className="col-lg-3 mb-3">
+          <div className="col-lg-4 mb-3">
             <input
               type="text"
               className="form-control"
