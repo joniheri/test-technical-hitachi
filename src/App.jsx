@@ -10,7 +10,7 @@ import Test3 from "./pages/Test3";
 
 export default function App() {
   return (
-    <div>
+    <div className="mb-5">
       <BrowserRouter>
         <Navbar />
         <Routes>

@@ -7,7 +7,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   return (
-    <div className="container mt-3">
+    <div className="container">
       <h3>Soal & Jawaban Test Technical</h3>
       <hr />
       <div className="row row-cols-1 row-cols-md-3 g-4">
