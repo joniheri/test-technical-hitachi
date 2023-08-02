@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 # JON DOCUMENTATION
 
-- For run project & Install Dependencies, using pnpm
+- Untuk running project & Install Dependencies, gunakan pnpm
 - Pastikan pnpm sudah terinstall secara global.
 - pnpm run dev --> this is run project
 - Jika mendapatkan project ini dari github atau dari directory lain, jangan lupa "pnpm install" terlebih dulu
