@@ -8,6 +8,8 @@ export default function Test2() {
   const params = useParams();
 
   const [soal, setSoal] = useState([]);
+  const [input, setInput] = useState("");
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     detailTest();
@@ -18,6 +20,32 @@ export default function Test2() {
     const response = dataSoal.find((item) => item.id === idSoal);
     console.log(response);
     setSoal(response);
+  };
+
+  const isPalindromic = (str) => {
+    const reversedStr = str.split("").reverse().join("");
+    return str === reversedStr;
+  };
+
+  const countPalindromicSubstrings = (str) => {
+    let count = 0;
+    const n = str.length;
+
+    for (let i = 0; i < n; i++) {
+      for (let j = i + 1; j <= n; j++) {
+        const substring = str.substring(i, j);
+        if (isPalindromic(substring)) {
+          count++;
+        }
+      }
+    }
+
+    return count;
+  };
+
+  const handleCalculate = () => {
+    const result = countPalindromicSubstrings(input);
+    setCount(result);
   };
 
   return (
@@ -60,6 +88,28 @@ export default function Test2() {
 
       <div className="mt-5">
         <h5>Demo Hasil</h5>
+        <div className="row">
+          <div className="col-lg-4 mb-3">
+            <div class="input-group">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Contoh: aaa"
+                value={input}
+                onChange={(e) => {
+                  setInput(e.target.value);
+                }}
+              />
+              <button
+                className="input-group-text btn btn-secondary"
+                onClick={handleCalculate}
+              >
+                Hitung
+              </button>
+            </div>
+          </div>
+          <h5>Output: {count}</h5>
+        </div>
       </div>
       <hr />
     </div>
