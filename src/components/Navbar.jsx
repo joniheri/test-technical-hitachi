@@ -51,7 +51,10 @@ export default function Navbar() {
                     dataSoal.map((item, index) => {
                       return (
                         <li key={index}>
-                          <Link className="dropdown-item" to={item.patchUrl}>
+                          <Link
+                            className="dropdown-item"
+                            to={item.patchUrl + `/${item.id}`}
+                          >
                             Test {item.id}
                           </Link>
                         </li>
